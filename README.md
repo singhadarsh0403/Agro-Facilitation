@@ -31,3 +31,6 @@ Crop irrigation Control.
 Humidity & Temperature.
 
 Suggestions of Which Crop to Plant and When and in What Quantities.
+
+
+To run the project include node modules in the repository , and run the index file.

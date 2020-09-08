@@ -25,12 +25,14 @@ const forecast = (latitude, longitude, callback) => {
                 if( body.currently.precipProbability<38)
                 {
                     var opt = "WARNING! temperature is high USE THESE PRECAUTIONS \n Use wet Grass Reduce soil moisture loss. \nSelect optimum sowing time. \n Moisture required \n Check for soil depth and Plogh pans\n Apply water with greater quantity\n Check time for irrigation"
-                    callback(final_data + opt, undefined)
+                    //callback(final_data + opt, undefined)
+                    callback( undefined,final_data + opt);
                }
                 else
                 {
                     var opt1 = "WARNING! temperature is high USE THESE PRECAUTIONS \n  Use wet Grass \n  Reduce soil moisture loss \n Use sprinkle irrigation if possible \n Select optimum sowing time \n  Moisture required \n  Check for soil depth and Plogh pans\n lower irrigation capacity\n  Check for Waterlagging "
-                    callback(final_data + opt1,undefined);
+                    //callback(final_data + opt1,undefined);
+                    callback( undefined,final_data + opt1)
                 }
             } 
             else
@@ -39,12 +41,14 @@ const forecast = (latitude, longitude, callback) => {
                 if( body.currently.precipProbability<38)
                 {
                     var opt2 = "WARNING! temperature is high USE THESE PRECAUTIONS \n  Use wet Grass \n  Reduce soil moisture loss \n Use sprinkle irrigation if possible \n Select optimum sowing time \n  Check if water logging is there\n lower irrigation capacity \nimprove irrigation\n  Check time for irrigation"
-                    callback(final_data + opt2,undefined);
+                    //callback(final_data + opt2,undefined);
+                    callback( undefined,final_data + opt2);
                 }
                 else
                 {
                     var opt3 = "WARNING! temperature is high USE THESE PRECAUTIONS \n  Use wet Grass \n  Reduce soil moisture loss \n Use sprinkle irrigation if possible \n Select optimum sowing time \n  Check if water logging is there\n lower irrigation capacity \nCheck WaterLogging \n Lower Irrigation Capacity "
-                    callback( final_data+ opt3,undefined);
+                    //callback( final_data+ opt3,undefined);
+                    callback( undefined,final_data + opt3);
                 }
             }
         }
@@ -55,12 +59,14 @@ const forecast = (latitude, longitude, callback) => {
                 if( body.currently.precipProbability<38)
                 {
                     var opt4 = "WARNING! temperature is low USE THESE PRECAUTIONS\n  plant earlier or later than most frost sensitive stage \n Plant crops of variable length \nPlant crops of variable varieties \n Check for soil depth and Plough pans\n Apply water with greater quantity\n Check time for irrigation \nimprove irrigation\n  Check time for irrigation" 
-                     callback(final_data + opt4,undefined);
+                     //callback(final_data + opt4,undefined);
+                     callback( undefined,final_data + opt4);
                 }
                 else
                 {
                     var opt5 = "WARNING! temperature is low USE THESE PRECAUTIONS\n  plant earlier or later than most frost sensitive stage \n Plant crops of variable length \nPlant crops of variable varieties \n Check for soil depth and Plough pans\n Apply water with greater quantity\n Check time for irrigation \n Check WaterLogging \n  Lower Irrigation Capacity "
-                    callback(final_data + opt5, undefined);
+                    //callback(final_data + opt5, undefined);
+                    callback( undefined,final_data + opt5);
                 }
             }
             else
@@ -69,13 +75,15 @@ const forecast = (latitude, longitude, callback) => {
                     if( body.currently.precipProbability<38)
                     {
                         var opt5 = "WARNING! temperature is low USE THESE PRECAUTIONS\n  plant earlier or later than most frost sensitive stage \n Plant crops of variable length \nPlant crops of variable varieties Check for soil depth and Plough pans\n Apply water with greater quantity\n Check time for irrigation \n improve irrigation\n Check time for irrigation "
-                        callback(final_data+  opt5,undefined);
+                        //callback(final_data+  opt5,undefined);
+                        callback( undefined,final_data + opt5);
                     }
                 
                     else
                     {
                         var opt6 = "WARNING! temperature is low USE THESE PRECAUTIONS\n  plant earlier or later than most frost sensitive stage \n Plant crops of variable length \nPlant crops of variable varieties Check for soil depth and Plough pans\n Apply water with greater quantity\n Check time for irrigation \n Check WaterLogging \n Lower Irrigation Capacity"
-                        callback(final_data + opt6,undefined);
+                        //callback(final_data + opt6,undefined);
+                        callback( undefined,final_data + opt6);
                     }
                 }
         }
